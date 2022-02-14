@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatisticas sobre covid</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/e5136947ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <i class="fas fa-heartbeat" id="header-icon"></i>
+        <p>Estatísticas sobre COVID-19 em Arapiraca</p>
+    </header>
+    <main>
+        <div id="grafic-contain-row-one">
+            <div class="grafic-contain-one">
+                <h2 id="grafic-title">Casos Confimados</h2>
+                <canvas id="casosConfirmados" height="185" width="300"></canvas>
+            </div>
+            <div class="grafic-contain-one">
+                <h2 id="grafic-title">Óbitos</h2>
+                <canvas id="obitos" height="185" width="300"></canvas>
+            </div>
+        </div>
+        <div id="grafic-contain-row-two">
+            <div class="grafic-contain-two">
+                <h2 id="grafic-title">*Não conseguimos encontrar dados sobre a vacinação em Arapiraca</h2>
+            </div>
+            <div class="grafic-contain-two">
+                <h2 id="grafic-title">Óbitos nos ultimos 7 dias</h2>
+                <canvas id="obitosSemana" height="185" width="300"></canvas>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="graficos.js"></script>
+</html>
